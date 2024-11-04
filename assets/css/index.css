@@ -56,7 +56,6 @@ body {
 }
 
 .neng_rating {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -114,6 +113,86 @@ body {
 .neng_btn_secondary:hover {
     opacity: 0.8;
 }
+
+/* Simple and Timeless Section */
+.neng_simple_and_timeless_section {
+    margin: 50px 0;
+    padding: 50px 0;}
+
+.neng_image_text_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.neng_image {
+    width: 50%;
+    height: auto;
+}
+
+.neng_text_content {
+    width: 40%;
+    text-align: left;
+}
+
+.neng_text_content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.neng_text_content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.neng_learn_more {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+.neng_learn_more:hover {
+    color: grey;
+}
+
+/* Discover Section */
+.neng_discover_section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.neng_discover_section h1 {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .neng_image_text_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .neng_image, .neng_text_content {
+        width: 100%;
+    }
+
+    .neng_text_content {
+        margin-top: 20px;
+    }
+
+    .neng_discover_section h1 {
+        font-size: 1.5rem;
+    }
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
