@@ -1,0 +1,174 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Navbar styles */
+.neng_navbar {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.neng_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.neng_nav_items {
+    display: flex;
+    gap: 30px;
+}
+
+.neng_nav_items h1 {
+    font-size: 16px;
+    color: rgb(115, 115, 115);
+    cursor: pointer;
+}
+
+.neng_cart img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.neng_hero_section {
+    background: linear-gradient(180deg, rgba(230, 246, 255, 0) 0%, rgba(230, 246, 255, 0.5) 100%);
+    text-align: center;
+    padding: 20px 0px 60px 0px;
+}
+
+.neng_hero_content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.neng_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.neng_rating span {
+    color: gold;
+    font-size: 20px;
+}
+
+.neng_hero_content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.neng_hero_content .neng_highlighted {
+    color: #3333FF; /* Example for the blue color */
+}
+
+.neng_hero_content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.neng_cta_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.neng_btn_primary {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.neng_btn_secondary {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border: 1px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.neng_btn_primary:hover,
+.neng_btn_secondary:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .neng_navbar {
+        padding: 0 20px; /* Reduce padding */
+    }
+
+    .neng_nav_items {
+        display: none; /* Hide items in smaller screens, optionally use a hamburger menu */
+    }
+
+    .neng_logo h1 {
+        font-size: 1.2rem; /* Reduce logo text size */
+    }
+
+    .neng_hero_content h1 {
+        font-size: 2.5rem; /* Reduce headline size */
+    }
+
+    .neng_hero_content p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .neng_cta_buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .neng_btn_primary, .neng_btn_secondary {
+        width: 100%; /* Buttons take full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .neng_navbar {
+        height: 50px; /* Adjust navbar height */
+    }
+
+    .neng_hero_content h1 {
+        font-size: 2rem; /* Further reduce headline size */
+    }
+
+    .neng_hero_content p {
+        font-size: 0.9rem; /* Further reduce paragraph size */
+    }
+
+    .neng_rating {
+        font-size: 12px; /* Reduce rating text size */
+    }
+
+    .neng_rating span {
+        font-size: 16px; /* Reduce star size */
+    }
+
+    .neng_btn_primary, .neng_btn_secondary {
+        font-size: 0.9rem; /* Adjust button text size */
+    }
+}
