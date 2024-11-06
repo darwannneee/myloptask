@@ -28,6 +28,10 @@ body {
     gap: 15px;
 }
 
+.neng_logoimg {
+    width: 70px;
+}
+
 .neng_logo h1 {
     font-size: 24px;
     font-weight: 500;
@@ -156,6 +160,11 @@ body {
     .hero-title {
         font-size: 15vw;
     }
+
+    .neng_logoimg {
+        width: 40px;
+    }
+    
 }
 
 /* Simple and Timeless Section */
