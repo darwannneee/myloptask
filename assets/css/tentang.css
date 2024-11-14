@@ -1,0 +1,86 @@
+/* About Page Styles */
+.neng_about_container {
+    padding-top: 40px;
+    background-color: #ffffff;
+}
+
+.neng_intro {
+    padding: 80px 120px;
+    background-color: #ffffff;
+}
+
+.neng_intro_content {
+    max-width: 800px;
+}
+
+.neng_intro_content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.neng_intro_content h1 span {
+    color: #666;
+    display: block;
+}
+
+.neng_intro_content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    max-width: 600px;
+}
+
+.neng_team {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.neng_team_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.neng_vision {
+    padding: 80px 120px;
+    background-color: #ffffff;
+}
+
+.neng_vision_content {
+    max-width: 800px;
+}
+
+.neng_vision_content h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.neng_vision_content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    max-width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .neng_intro,
+    .neng_vision {
+        padding: 40px 20px;
+    }
+
+    .neng_intro_content h1 {
+        font-size: 36px;
+    }
+
+    .neng_vision_content h2 {
+        font-size: 32px;
+    }
+
+    .neng_intro_content p,
+    .neng_vision_content p {
+        font-size: 16px;
+    }
+}

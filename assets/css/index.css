@@ -9,8 +9,6 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
-/* Navbar styles */
-/* Updated Navbar styles */
 .neng_navbar {
     width: 100%;
     height: 80px;
@@ -43,7 +41,9 @@ body {
     gap: 40px;
 }
 
-.neng_nav_items h1 {
+.neng_nav_items a {
+    font-weight: bold;
+    text-decoration: none;
     font-size: 14px;
     color: #333;
     text-transform: uppercase;
@@ -54,6 +54,10 @@ body {
 
 .neng_nav_items h1:hover {
     color: #000;
+}
+
+.neng_nav_items .active {
+    text-decoration: underline;
 }
 
 .neng_cart {
@@ -77,7 +81,6 @@ body {
     justify-content: center;
 }
 
-/* Hero Section */
 .neng_hero_section {
     width: 100%;
     min-height: 100vh;
@@ -137,37 +140,6 @@ body {
     margin: 0 0.2em;
 }
 
-/* Responsive styles */
-@media (max-width: 1024px) {
-    .side-image {
-        display: none;
-    }
-    
-    .main-image {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .neng_hero_section {
-        padding: 20px;
-    }
-
-    .main-image {
-        width: 100%;
-    }
-
-    .hero-title {
-        font-size: 15vw;
-    }
-
-    .neng_logoimg {
-        width: 40px;
-    }
-    
-}
-
-/* Simple and Timeless Section */
 .neng_simple_and_timeless_section {
     margin: 50px 0;
     padding: 50px 0;}
@@ -213,7 +185,6 @@ body {
     color: grey;
 }
 
-/* Discover Section */
 .neng_discover_section {
     text-align: center;
     padding: 100px 20px;
@@ -226,11 +197,14 @@ body {
     line-height: 1.5;
 }
 
-/* Updated Catalog Section Styles */
 .neng_catalog_section {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.neng_catalog_section a {
+    text-decoration: none;
 }
 
 .neng_catalog_header {
@@ -337,53 +311,6 @@ body {
     opacity: 0.7;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .neng_catalog_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .neng_catalog_header h2,
-    .neng_catalog_header h3 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .neng_catalog_container {
-        grid-template-columns: 1fr;
-    }
-    
-    .neng_catalog_header h2,
-    .neng_catalog_header h3 {
-        font-size: 1.5rem;
-    }
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
-    .neng_image_text_container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .neng_image, .neng_text_content {
-        width: 100%;
-    }
-
-    .neng_text_content {
-        margin-top: 20px;
-    }
-
-    .neng_discover_section h1 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Fashion Category Section Styles */
 .neng_fashion_category {
     padding: 60px 20px;
     max-width: 1200px;
@@ -414,7 +341,6 @@ body {
     grid-template-columns: 1fr;
 }
 
-/* Main Article Styles */
 .neng_main_article {
     position: relative;
     height: 500px;
@@ -452,7 +378,6 @@ body {
     text-decoration: underline;
 }
 
-/* Secondary Articles Grid */
 .neng_secondary_articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -486,93 +411,35 @@ body {
     margin-bottom: 8px;
     color: #333;
 }
-
-/* Responsive Styles */
-@media (max-width: 900px) {
-    .neng_secondary_articles {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1024px) {
+    .side-image {
+        display: none;
+    }
+    
+    .main-image {
+        width: 80%;
     }
 }
 
-@media (max-width: 600px) {
-    .neng_main_article {
-        height: 300px;
-    }
-    
-    .neng_secondary_articles {
-        grid-template-columns: 1fr;
-    }
-    
-    .neng_article_content h3 {
-        font-size: 1.5rem;
-    }
-    
-    .neng_category_header h2 {
-        font-size: 1.5rem;
-    }
-}
-
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    .neng_navbar {
-        padding: 0 20px; /* Reduce padding */
+    .neng_hero_section {
+        padding: 20px;
     }
 
-    .neng_nav_items {
-        display: none; /* Hide items in smaller screens, optionally use a hamburger menu */
+    .main-image {
+        width: 100%;
     }
 
-    .neng_logo h1 {
-        font-size: 1.2rem; /* Reduce logo text size */
+    .hero-title {
+        font-size: 15vw;
     }
 
-    .neng_hero_content h1 {
-        font-size: 2.5rem; /* Reduce headline size */
+    .neng_logoimg {
+        width: 40px;
     }
-
-    .neng_hero_content p {
-        font-size: 1rem; /* Adjust paragraph size */
-    }
-
-    .neng_cta_buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px;
-    }
-
-    .neng_btn_primary, .neng_btn_secondary {
-        width: 100%; /* Buttons take full width on smaller screens */
-    }
+    
 }
 
-@media (max-width: 480px) {
-    .neng_navbar {
-        height: 50px; /* Adjust navbar height */
-    }
-
-    .neng_hero_content h1 {
-        font-size: 2rem; /* Further reduce headline size */
-    }
-
-    .neng_hero_content p {
-        font-size: 0.9rem; /* Further reduce paragraph size */
-    }
-
-    .neng_rating {
-        font-size: 12px; /* Reduce rating text size */
-    }
-
-    .neng_rating span {
-        font-size: 16px; /* Reduce star size */
-    }
-
-    .neng_btn_primary, .neng_btn_secondary {
-        font-size: 0.9rem; /* Adjust button text size */
-    }
-}
-
-
-/* Latest Collection Section Styles */
 .neng_latest_collection {
     padding: 80px 0;
     background-color: #fff;
@@ -631,7 +498,6 @@ body {
     opacity: 0.7;
 }
 
-/* Footer Styles */
 .neng_footer {
     padding: 80px 0;
     background-color: #fff;
@@ -673,7 +539,21 @@ body {
     color: #000;
 }
 
-/* Responsive Styles */
+.neng_footer_column input {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    text-align: center;
+}
+
+.neng_footer_column button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
 @media (max-width: 968px) {
     .neng_latest_collection_container {
         grid-template-columns: 1fr;
@@ -705,5 +585,143 @@ body {
     .neng_footer_container {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .neng_secondary_articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .neng_main_article {
+        height: 300px;
+    }
+    
+    .neng_secondary_articles {
+        grid-template-columns: 1fr;
+    }
+    
+    .neng_article_content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .neng_category_header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .neng_navbar {
+        padding: 0 20px; 
+    }
+
+    .neng_nav_items {
+        display: none; 
+    }
+
+    .neng_logo h1 {
+        font-size: 1.2rem; 
+    }
+
+    .neng_hero_content h1 {
+        font-size: 2.5rem; 
+    }
+
+    .neng_hero_content p {
+        font-size: 1rem; 
+    }
+
+    .neng_cta_buttons {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .neng_btn_primary, .neng_btn_secondary {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .neng_catalog_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .neng_catalog_header h2,
+    .neng_catalog_header h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .neng_catalog_container {
+        grid-template-columns: 1fr;
+    }
+    
+    .neng_catalog_header h2,
+    .neng_catalog_header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .neng_image_text_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .neng_image, .neng_text_content {
+        width: 100%;
+    }
+
+    .neng_text_content {
+        margin-top: 20px;
+    }
+
+    .neng_discover_section h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .neng_burger {
+        display: flex;
+    }
+    
+    /* Hide original nav items on smaller screens */
+    .neng_nav_items {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .neng_navbar {
+        height: 50px; /* Adjust navbar height */
+    }
+
+    .neng_hero_content h1 {
+        font-size: 2rem; /* Further reduce headline size */
+    }
+
+    .neng_hero_content p {
+        font-size: 0.9rem; /* Further reduce paragraph size */
+    }
+
+    .neng_rating {
+        font-size: 12px; /* Reduce rating text size */
+    }
+
+    .neng_rating span {
+        font-size: 16px; /* Reduce star size */
+    }
+
+    .neng_btn_primary, .neng_btn_secondary {
+        font-size: 0.9rem; /* Adjust button text size */
     }
 }
